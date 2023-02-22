@@ -1,0 +1,352 @@
+{
+    "name": "gtk4d",
+    "targetName": "gtk4d",
+    "targetType": "none",
+    "sourcePaths": ["generated"],
+    "importPaths": ["generated"],
+    "description": "GlibD is the Digital Mars D programing language OO wrapper for Glib.",
+    "homepage": "http://gtkd.org",
+    "license": "LGPL license",
+    "version": "0.1.1",
+    "authors": [
+        "Frank Benoit",
+        "Jake Day",
+        "Jonas Kivi",
+        "Alan Knowles",
+        "Antonio Monteiro",
+        "Sebastián E. Peyrott",
+        "John Reimer",
+        "Mike Wey",
+        "hauptmech",
+		"Gert-jan Poortman"
+	],
+    "dependencies": {
+        "gtk4d:adw": ">=0.0.0",
+		"gtk4d:atk": ">=0.0.0",
+		"gtk4d:cairo": ">=0.0.0",
+		"gtk4d:gdk": ">=0.0.0",
+		"gtk4d:gdkpixbuf": ">=0.0.0",
+		"gtk4d:gio": ">=0.0.0",
+		"gtk4d:glib": ">=0.0.0",
+		"gtk4d:gobject": ">0.0.0",
+		"gtk4d:graphene": ">=0.0.0",
+		"gtk4d:gsk": ">=0.0.0",
+		"gtk4d:gtk": ">=0.0.0",
+		"gtk4d:harfbuzz": ">=0.0.0",
+		"gtk4d:linker": ">=0.0.0",
+		"gtk4d:pango": ">=0.0.0",
+		"gtk4d:rsvg": ">=0.0.0",
+		"gtk4d:shumate": ">=0.0.0",
+		"gtk4d:soup": ">=0.0.0",
+		"gtk4d:sourceview": ">=0.0.0"
+    },
+    "subPackages": [
+		{
+			"importPaths": [
+				"generated/linker"
+			],
+			"name": "linker",
+			"sourcePaths": [
+				"generated/linker"
+			],
+			"targetName": "linker",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+            "name": "gobject",
+			"dependencies": {
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/gobject",
+				"generated"
+			],
+
+			"sourcePaths": [
+				"generated/gobject"
+			],
+			"targetName": "gobject",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+            "name": "glib",
+			"dependencies": {
+				"gtk4d:linker": ">=0.0.0",
+				"gtk4d:gobject": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/glib"
+			],
+
+			"sourcePaths": [
+				"generated/glib"
+			],
+			"targetName": "glib",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/graphene"
+			],
+			"name": "graphene",
+			"sourcePaths": [
+				"generated/graphene"
+			],
+			"targetName": "graphene",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/cairo"
+			],
+			"name": "cairo",
+			"sourcePaths": [
+				"generated/cairo"
+			],
+			"targetName": "cairo",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/harfbuzz"
+			],
+			"name": "harfbuzz",
+			"sourcePaths": [
+				"generated/harfbuzz"
+			],
+			"targetName": "harfbuzz",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:cairo": ">=0.0.0",
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:harfbuzz": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/pango"
+			],
+			"name": "pango",
+			"sourcePaths": [
+				"generated/pango"
+			],
+			"targetName": "pango",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/gio"
+			],
+			"name": "gio",
+			"sourcePaths": [
+				"generated/gio"
+			],
+			"targetName": "gio",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:gio": ">=0.0.0",
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/gdkpixbuf"
+			],
+			"name": "gdkpixbuf",
+			"sourcePaths": [
+				"generated/gdkpixbuf"
+			],
+			"targetName": "gdkpixbuf",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/atk"
+			],
+			"name": "atk",
+			"sourcePaths": [
+				"generated/atk"
+			],
+			"targetName": "atk",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:cairo": ">=0.0.0",
+				"gtk4d:gdkpixbuf": ">=0.0.0",
+				"gtk4d:gio": ">=0.0.0",
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0",
+				"gtk4d:pango": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/gdk"
+			],
+			"name": "gdk",
+			"sourcePaths": [
+				"generated/gdk"
+			],
+			"targetName": "gdk",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:cairo": ">=0.0.0",
+				"gtk4d:gdkpixbuf": ">=0.0.0",
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/rsvg"
+			],
+			"name": "rsvg",
+			"sourcePaths": [
+				"generated/rsvg"
+			],
+			"targetName": "rsvg",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:cairo": ">=0.0.0",
+				"gtk4d:gdk": ">=0.0.0",
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:graphene": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/gsk"
+			],
+			"name": "gsk",
+			"sourcePaths": [
+				"generated/gsk"
+			],
+			"targetName": "gsk",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:gdk": ">=0.0.0",
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:graphene": ">=0.0.0",
+				"gtk4d:gsk": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/gtk"
+			],
+			"name": "gtk",
+			"sourcePaths": [
+				"generated/gtk"
+			],
+			"targetName": "gtk",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:gtk": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/adw"
+			],
+			"name": "adw",
+			"sourcePaths": [
+				"generated/adw"
+			],
+			"targetName": "adw",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:gtk": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/sourceview"
+			],
+			"name": "sourceview",
+			"sourcePaths": [
+				"generated/sourceview"
+			],
+			"targetName": "sourceview",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:gio": ">=0.0.0",
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/soup"
+			],
+			"name": "soup",
+			"sourcePaths": [
+				"generated/soup"
+			],
+			"targetName": "soup",
+			"targetType": "library",
+			"version": "0.0.0"
+		},
+		{
+			"dependencies": {
+				"gtk4d:glib": ">=0.0.0",
+				"gtk4d:gtk": ">=0.0.0",
+				"gtk4d:linker": ">=0.0.0",
+				"gtk4d:soup": ">=0.0.0"
+			},
+			"importPaths": [
+				"generated/shumate"
+			],
+			"name": "shumate",
+			"sourcePaths": [
+				"generated/shumate"
+			],
+			"targetName": "shumate",
+			"targetType": "library",
+			"version": "0.0.0"
+		}
+    ]
+    
+}
+
