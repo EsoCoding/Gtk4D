@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/gtk_d
+gtk4d.so
+gtk4d.dylib
+gtk4d.dll
+gtk4d.a
+gtk4d.lib
+gtk4d-test-*
+/build
+*.exe
+*.o
+*.obj
+*.lst
+*.a
