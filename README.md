@@ -5,28 +5,14 @@
 This project is not yet finished and only the meson.build will work on this moment. And its only been tested on the latest ubuntu version 22.10.
 So if you test it, let me know if you run into problems and post your issues so i or others can look into it.
 
-### TODO
-Things that are really need to be worked on are 
+### Requirements
+- Linux, not tested for windows/osx.
+- the gir files or dev version of libraries below
+- dmd, gdc or ldc compiler
+- [gir-to-d](https://github.com/Gtk4D/gir-to-d) from konstantIMP
 
-    1. Writing tests,
-    2. Building examples
-    3. Creating composite templates
+[gir-to-d](https://github.com/Gtk4D/gir-to-d) from konstantIMP is needed, the offcial one wont work. On the git of [gir-to-d](https://github.com/Gtk4D/gir-to-d) you find the instructions on how to install and generate these binding interface files.
 
-### install
-The install process will create a shared library on linux systems and works like any other meson install process does. Just run:
-```
-meson setup build
-meson compile -C build <-- builds gtk4d
-meson install -C build <-- installs
-``` 
-
-### Contributing
-Anyone is free to help and contribute whether this is through posting issues, adding examples, adding libraries or perhaps you have published some helpful tutorials, please feel free to commit and support the progress in any way you can. If you want to make contact, you can send me a email at info@gtk-d.com or find me in [gtk-d](https://matrix.to/#/#gtkd:matrix.org) channel of the matrix chat server.
-
-### gir files
-In case you need gir files and can't find working ones, this [repo](https://github.com/gtk4d/gir-files) will give you working gir files from which girtod can create the bindigns.
-
-### Included Library's
 
 | Library  | Submodule name | Description |
 | :------- | :------------- | :---------- |
@@ -47,6 +33,27 @@ In case you need gir files and can't find working ones, this [repo](https://gith
 | GtkSourceView | sourceview | GtkSourceView is a GNOME library that extends GtkTextView, the standard GTK+ widget for multiline text editing |
 | libsoup | soup | libsoup is an HTTP client/server library for GNOME |
 | libshumate | shumate | libshumate is a C library providing a GtkWidget to display maps |
+
+### install
+The install process will create a shared library on linux systems and works like any other meson install process does. Just run:
+```
+meson setup build
+meson compile -C build <-- builds gtk4d
+meson install -C build <-- installs
+``` 
+
+### TODO
+Things that are really need to be worked on are 
+
+    1. Writing tests,
+    2. Building examples
+    3. Creating composite templates
+
+### Contributing
+Anyone is free to help and contribute whether this is through posting issues, adding examples, adding libraries or perhaps you have published some helpful tutorials, please feel free to commit and support the progress in any way you can. If you want to make contact, you can send me a email at info@gtk-d.com or find me in [gtk-d](https://matrix.to/#/#gtkd:matrix.org) channel of the matrix chat server.
+
+### gir files
+In case you need gir files and can't find working ones, this [repo](https://github.com/gtk4d/gir-files) will give you working gir files from which girtod can create the bindigns.
 
 ### LICENSE
 Gtkd and gtkD use LGPLv3 license
