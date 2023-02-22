@@ -6,7 +6,7 @@ This project is not yet finished and only the meson.build will work on this mome
 So if you test it, let me know if you run into problems and post your issues so i or others can look into it.
 
 ### Requirements
-- Linux, not tested for windows/osx.
+- Linux, not tested on windows/osx. Meson.build file might need some adjustments.
 - the gir files or dev version of libraries below
 - dmd, gdc or ldc compiler
 - [gir-to-d](https://github.com/Gtk4D/gir-to-d) from konstantIMP
