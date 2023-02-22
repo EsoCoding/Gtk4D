@@ -2,17 +2,19 @@
 
 [Gtk4D](http://www.github.com/gtk-d/gtk-dhttp://www.github.com/gtk-d/gtk4d) is a D language (Digitial Mars D) wrapper for Gtk4.0 and other GObject library's like Gio, Shumate, Libsoup etc. Its forked from KonstantIMP [Gtk_D](https://github.com/KonstantIMP/gtk_d) version  who continued working on the official [Gtk-d](https://gtkd.org/) branch which seemed no longer to be under active development. Because of the inactivity on the git of gtk-d, failing install and examples and commits that no longer seemed to be merged, i decidided to maintain an alternative branch and continue the work of [Gtk_D](https://github.com/KonstantIMP/gtk_d) from KonstantIMP. I hope to make Gtk4D more interesting for the Gtk community that might have some interest in the D language.
 
-### This is work in progres
+## This is work in progres
 
 This project is not yet finished and only the meson.build will work on this moment. And its only been tested on the latest ubuntu version 22.10.
 So if you test it, let me know if you run into problems and post your issues so i or others can look into it.
 
-### Requirements
+## Requirements
 
 - Linux, not tested on windows/osx. Meson.build file might need some adjustments.
 - the gir files or dev version of libraries below
 - dmd, gdc or ldc compiler
 - [gir-to-d](https://github.com/Gtk4D/gir-to-d) from konstantIMP
+- Python3
+- meson and ninja, dub or xmake and lua.
 
 [gir-to-d](https://github.com/Gtk4D/gir-to-d) from konstantIMP is needed, the official version won't work. On the git of [gir-to-d](https://github.com/Gtk4D/gir-to-d) you find the instructions on how to install and generate these binding interface files.
 
@@ -37,7 +39,7 @@ So if you test it, let me know if you run into problems and post your issues so 
 | libsoup       | soup           | libsoup is an HTTP client/server library for GNOME                                                                                                                                        |
 | libshumate    | shumate        | libshumate is a C library providing a GtkWidget to display maps                                                                                                                           |
 
-### install
+## installation
 
 For installing gtk4d on ubuntu 22.10, you can install the dependant library's using apt-get:
 
@@ -66,21 +68,22 @@ dub add gtk4d:shumate
 dub add gtk4d:glib
 ```
 
-### TODO
+## TODO
 
 Things that are really need to be worked on are
 
 1. Writing tests,
 2. Building examples
 3. Creating composite templates
-### Contributing
 
-Anyone is free to help and contribute whether this is through posting issues, adding examples, adding libraries or perhaps you have published some helpful tutorials, please feel free to commit and support the progress in any way you can. If you want to make contact, you can send me a email at info@gtk-d.com or find me in [gtk-d](https://matrix.to/#/#gtkd:matrix.org) channel of the matrix chat server.
+## Contributing
 
-### gir files
+Anyone is free to help and contribute whether this is through posting issues, adding examples, adding libraries or perhaps you have published some helpful tutorials, please feel free to commit and support the progress in any way you can. If you want to make contact, you can send me a email at info@gtk-d.com or find me in [Gtk4D](https://matrix.to/#/#gtkd:matrix.org) channel of the matrix chat server.
+
+## gir files
 
 In case you need gir files and can't find working ones, this [repo](https://github.com/gtk4d/gir-files) will give you working gir files from which girtod can create the bindigns.
 
-### LICENSE
+## LICENSE
 
 Gtkd and gtkD use LGPLv3 license
