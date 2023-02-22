@@ -15,4 +15,4 @@ gtk4d-test-*
 *.obj
 *.lst
 *.a
-.vscode
+*.vscode
