@@ -1,5 +1,5 @@
 project('Gtk4D', 'd',
-    meson_version : '>=0.63',
+    meson_version : '>=0.60',
 
     license: 'LGPL-3.0',
     version: '0.1.1'
