@@ -1,0 +1,3 @@
+[submodule "Gtk4D"]
+	path = Gtk4D
+	url = git@github.com:Gtk4D/Gtk4D.git
