@@ -10,7 +10,6 @@ import gtk.Application, gtk.ApplicationWindow;
 
 /** Import Adw lib */
 import adw.Avatar;
-import core.sys.windows.windef;
 
 /** 
  * Start point of the app

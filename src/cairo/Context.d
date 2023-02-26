@@ -81,7 +81,7 @@ private import cairo.ScaledFont;
 private import cairo.Surface;
 private import cairo.Pattern;
 private import glib.Str;
-private import linker.Loader;
+private import gtkd.Loader;
 private import std.traits;
 
 
@@ -134,7 +134,7 @@ public class Context
 	~this ()
 	{
 		static if ( isPointer!(typeof(cairo_get_reference_count)) )
-			bool libLoaded = Linker.isLoaded(LIBRARY_CAIRO[0]);
+			bool libLoaded = Linker.isLoaded(LIBRARY_CAIRO);
 		else
 			enum libLoaded = true;
 

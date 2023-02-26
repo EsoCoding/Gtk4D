@@ -54,7 +54,7 @@ module cairo.Device;
 
 public  import cairo.c.types;
 
-private import cairo.c.functions;
+public import cairo.c.functions;
 private import glib.ConstructionException;
 
 
