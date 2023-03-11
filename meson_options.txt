@@ -1,1 +1,1 @@
-option('generate', type : 'boolean', value : false)
+option('generate', type : 'boolean', value : true)
