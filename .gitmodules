@@ -1,3 +1,0 @@
-[submodule "gir-to-d"]
-	path = gir-to-d
-	url = git@github.com:Gtk4D/gir-to-d.git
