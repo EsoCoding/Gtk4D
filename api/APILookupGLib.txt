@@ -393,6 +393,7 @@ code: start
 	static import glib.Version;
 	deprecated("moves to the glib.Version module")
 	alias glib.Version.Version Version;
+	
 code: end
 
 struct: HashTable
@@ -1495,7 +1496,7 @@ version 2.68: noCode: new_identifier
 struct: Tree
 class: BBTree
 
-version 2.66: start
+version 2.74.3: start
 	struct: Uri
 	class: URI
 version: end

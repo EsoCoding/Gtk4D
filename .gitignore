@@ -10,6 +10,7 @@ docs.json
 __dummy.html
 docs/
 /gtk_d
+/prefix
 gtk4d.so
 gtk4d.dylib
 gtk4d.dll
@@ -22,3 +23,4 @@ gtk4d-test-*
 *.obj
 *.lst
 *.a
+*.buildconfig

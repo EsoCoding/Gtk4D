@@ -1,10 +1,12 @@
-globber = find_program('glob.py')
+globber = find_program('glob.py', required: true)
 
 foreach lib : libsToGenerate
-    
+    message('******************************************')
     message('Generating bindings for '+ lib)
+    message('******************************************')
     
-    libFiles = run_command(globber, join_paths(meson.current_source_dir(),lib), check: true)
+    libFiles = run_command(globber, join_paths(meson.current_source_dir(), lib), check: true)
+    
     if libFiles.returncode() != 0
         error('Could not read files in '+lib+' directory.')
     endif

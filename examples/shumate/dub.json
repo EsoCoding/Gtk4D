@@ -1,0 +1,13 @@
+{
+	"authors": [
+		"KonstantIMP"
+	],
+	"copyright": "Copyright © 2021, KonstantIMP",
+	"description": "A simpl mapview app used shumate",
+	"license": "LGPL-3.0",
+	"name": "map",
+	"dependencies": {
+		"gtk4d:gtk" : {"version": "*", "path": "../../../"},
+		"gtk4d:shumate" : {"version": "*", "path": "../../../"}
+	}
+}

@@ -6,24 +6,28 @@ project('Gtk4D', 'd',
 
 ############################## Gtk/GObject Dependencies ######################################
 
-glib_dep          = dependency('glib-2.0', version: '2.74.3')
-gmodule_dep       = dependency('gmodule-2.0', version: '2.74.3')
-gobject_dep       = dependency('gobject-2.0', version: '2.74.3')
-gio_dep           = dependency('gio-2.0', version: '2.74.3')
-gtk_dep           = dependency('gtk4', version: '4.8.1')
-gdkpixbuf_dep     = dependency('gdk-pixbuf-2.0', version: '2.42.9')
-graphene_dep      = dependency('graphene-1.0', version: '1.11.1')
-atk_dep           = dependency('atk', version: '2.46.0')
-gthread_dep       = dependency('gthread-2.0', version: '2.74.3')
-harfbuzz_dep      = dependency('harfbuzz', version: '2.7.4')
-rsvg_dep          = dependency('librsvg-2.0', version: '2.54.4')
-soup_dep          = dependency('libsoup-3.0', version: '3.2.0')
-pango_dep         = dependency('pango', version: '1.50.10')
-shumate_dep       = dependency('shumate-1.0', version: '1.1.alpha')
-sourceview_dep    = dependency('gtksourceview-5', version: '5.6.1')
-adw_dep           = dependency('libadwaita-1', version: '1.2.0')  
-cairo_dep         = dependency('cairo', version: '1.16.0')
-introspection_dep = dependency('gobject-introspection-1.0', version: '1.74.0')
+glib_dep          = dependency('glib-2.0', version: '>=2.74.3')
+gmodule_dep       = dependency('gmodule-2.0', version: '>=2.74.3')
+gobject_dep       = dependency('gobject-2.0', version: '>=2.74.3')
+gio_dep           = dependency('gio-2.0', version: '>=2.74.3')
+gtk_dep           = dependency('gtk4', version: '>=4.8.1')
+gdkpixbuf_dep     = dependency('gdk-pixbuf-2.0', version: '>=2.42.9')
+graphene_dep      = dependency('graphene-1.0', version: '>=1.11.1')
+atk_dep           = dependency('atk', version: '>=2.46.0')
+gthread_dep       = dependency('gthread-2.0', version: '>=2.74.3')
+harfbuzz_dep      = dependency('harfbuzz', version: '>=2.7.4')
+rsvg_dep          = dependency('librsvg-2.0', version: '>=2.54.4')
+soup_dep         = dependency('libsoup-3.0', version: '>=3.2.0')
+pango_dep         = dependency('pango', version: '>=1.50.10')
+shumate_dep       = dependency('shumate-1.0', version: '>=1.1.alpha')
+sourceview_dep    = dependency('gtksourceview-5', version: '>=5.6.1')
+adw_dep           = dependency('libadwaita-1', version: '>=1.2.0')  
+cairo_dep         = dependency('cairo', version: '>=1.16.0')
+introspection_dep = dependency('gobject-introspection-1.0', version: '>=1.74.0')
+
+#################################### install gir-to-d as subproject ####################################
+
+
 
 ############################ General defines for path and directory name ###############################
 

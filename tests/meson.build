@@ -1,2 +1,3 @@
 
 subdir('gobject')
+subdir('adw')

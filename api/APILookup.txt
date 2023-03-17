@@ -72,7 +72,7 @@ lookup: APILookupGsk.txt
 lookup: APILookupGtk.txt
 lookup: APILookupGraphene.txt
 lookup: APILookupShumate.txt
-lookup: APILookupSoup.txt
+lookup: APILookupSoup3.txt
 lookup: APILookupSourceView.txt
 #lookup: APILookupGStreamer.txt
 #lookup: APILookupGstInterfaces.txt
