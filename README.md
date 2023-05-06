@@ -1,6 +1,6 @@
 # Gtk4D
 
-[Gtk4D](http://www.github.com/gtk-d/gtk-dhttp://www.github.com/gtk-d/gtk4d) is a D language (Digitial Mars D) wrapper for Gtk-4 and other GObject library's like Gio, Shumate, Libsoup etc. Its a mix of the original [Gtk-d](https://gtkd.org/) branch which seems no longer to be under active development and the [Gtk_D](https://github.com/KonstantIMP/gtk_d) version of konstantIMP who continue the work of gtkd durings its long time of inactivity. With Gtk4d i want to try to make D more interesting for the gtk community and continue its development. Plans are to modernise the wrapper with options like composite templates, so it can compete with other language bindings for gtk like Vala and Python similar wrappers.
+[Gtk4D](http://www.github.com/gtk-d/gtk-dhttp://www.github.com/gtk-d/gtk4d) is a D language (Digitial Mars D) wrapper for Gtk-4 and other GObject library's like Gio, Shumate, Libsoup etc. Plans are to modernise the wrapper with options like composite templates, so it can compete with other language bindings for gtk like Vala and Python similar wrappers.
 
 ### install
 
@@ -11,10 +11,6 @@ meson setup builddir --prefix=/usr
 meson compile -C builddir
 meson install -C builddir <-- installs
 ```
-
-### Contributing
-
-Anyone is free to help and contribute whether this is through posting issues, adding examples, adding libraries or perhaps you have published some helpful tutorials, please feel free to commit and support the progress in any way you can. If you want to make contact, you can send me a email at info@gtk-d.com or find me in [gtk-d](https://matrix.to/#/#gtkd:matrix.org) channel of the matrix chat server.
 
 ### Included Library's
 
